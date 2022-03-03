@@ -72,10 +72,7 @@ include 'dbcon.php';
 	$query = mysqli_query($con,$selectquery);
 	$result = mysqli_fetch_array($query);
 	$_SESSION["email"] = $result['email'];	
-	?>
-	<div class="chatbot">
-		<?php include 'chat bot/index.php';?>
-	</div>
+	?>	
 	<div class="parallax" style="background-image: url('images/img1.jpg');">
 		<div class="quote1">
 			<?php if(!isset($_SESSION['username'])) {?>
