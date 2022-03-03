@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>map</title>
+</head>
+<body>
+<h1>Location</h1>
+<button onclick="getLocation()">Get location</button>
+<div id="output"></div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js">	
+</script>
+<script type="text/javascript">
+	var x = document.getElementById('output');
+
+	function getLocation()
+	{
+		if(navigator.geolocation)
+		{
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}
+		else
+		{
+			x.innerHTML = "not supporting";
+		}
+	}
+
+	function showPosition(position)
+	{
+		x.innerHTML ="latitude= "+position.coords.latitude
+		x.innerHTML += "<br/>"
+		x.innerHTML +="longitude= "+position.coords.longitude
+
+
+		var locAPI = "http://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&sensor=true";
+		x.innerHTML= locAPI;
+		$.get({
+			url: locAPI,
+			success: function(data)
+			{
+				console.log(data);
+			}
+		})
+	}
+</script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2_J56yANJuN6x8cukK5xyI3U4aH2mQGI&callback=initMap"
+  type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,688 @@
+
+body, html {
+  height: 100%;
+  
+}
+
+.parallax {
+  /* The image used */
+  
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.quote1
+{
+  font-weight: 900;
+  color: #fff;
+  font-size: 45px;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 18%;
+  text-shadow: 2px 2px 10px #000;
+}
+.subquote1
+{
+  font-weight: 800;
+  color: #fff;
+  font-size: 30px;
+  margin-top: -10px;
+  margin-left: 67%;
+}
+.mainbody
+{
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/*css for product section*/
+ .product-list
+ {
+  height: 100px;
+ }
+ 
+  /*end*/
+
+  .topplaces
+  {
+    
+    margin-top: 22%;
+  }
+
+  /*flip card start*/
+  
+
+.containerrr {
+  width: 95%;
+  height: 400px;
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  text-align: center;
+  width: 95%;
+  height: 100%;
+  padding: 20px 50px;
+  color: #fff;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.content {
+  transform: translatez(70px) scale(0.8);
+  line-height: 1.5em;
+  text-shadow: 6px 10px 10px #000;
+}
+
+.content h1 {
+  position: relative;
+}
+.content p {
+  margin-top: 50px;
+  line-height: 2em;
+}
+.content h1:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 3px;
+  background-color: #3e3;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.front {
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+}
+.back {
+  background-color: #333;
+  transform: rotateY(180deg);
+  z-index: 0;
+  padding-top: 10px;
+}
+.containerrr:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+form {
+  text-align: left;
+}
+.back h1 {
+  margin: 0;
+}
+form label,
+form input {
+  display: block;
+}
+form input,
+form textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #444;
+  padding: 5px;
+  width: 100%;
+  color: #fff;
+}
+form label {
+  margin: 15px 0;
+}
+form input[type="submit"] {
+  display: block;
+  width: auto;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border: 3px solid #555;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+/* my button style  */
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.35s ease-in-out;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
+}
+
+.white-mode:hover {
+  background-color: #000;
+  color: #122;
+}
+
+/*flip card end*/
+
+ /* css for feed starts here */
+ .feed-container
+ {
+   margin-top: 5%;
+ }
+ .feed {
+  margin-left: 6% !important ;  
+  max-width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 350px;
+  grid-gap: 16px;
+  margin: 40px 0 40px 0;
+}
+
+
+.card__category {
+  font-family: Muli, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ECF0F1;
+  margin: 0;
+}
+
+.card__title {
+  font-family: Libre Baskerville, serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ECF0F1;
+  margin: 10px 0 0 0;
+}
+
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+          box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.card:hover 
+{
+ text-decoration-line: none;
+}
+.feed-text
+{
+  font-size: 60px;
+}
+.card:nth-child(1) {
+    border: 0px;
+    box-shadow: none;
+   /* background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/udaipur lake1.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/udaipur lake1.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/udaipur lake1.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/udaipur lake1.jpg');        */
+}
+
+.card:nth-child(2) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/travel_agent.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/travel_agent.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/travel_agent.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/travel_agent.jpg');
+}
+
+.card:nth-child(3) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/chobimura2.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/chobimura2.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/chobimura2.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/chobimura2.jpg');
+}
+
+.card:nth-child(4) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/pankaj-kumar-s9KlC-kMFtU-unsplash.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/pankaj-kumar-s9KlC-kMFtU-unsplash.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/pankaj-kumar-s9KlC-kMFtU-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/pankaj-kumar-s9KlC-kMFtU-unsplash.jpg');
+}
+
+.card:nth-child(5) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/durga-puja.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/durga-puja.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/durga-puja.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/durga-puja.jpg');
+}
+
+.card:nth-child(6) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/lake-pichola.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/lake-pichola.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/lake-pichola.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/lake-pichola.jpg');
+}
+
+.card:nth-child(7) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/mayank-aswal-tL56tHLylCo-unsplash.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/mayank-aswal-tL56tHLylCo-unsplash.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/mayank-aswal-tL56tHLylCo-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/mayank-aswal-tL56tHLylCo-unsplash.jpg');
+}
+
+.card:nth-child(8) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/udypr8.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/udypr8.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/udypr8.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/udypr8.jpg');
+}
+
+.card:nth-child(9) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/beauti of tripura.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/beauti of tripura.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/beauti of tripura.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/beauti of tripura.jpg');
+}
+.card:nth-child(10) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/img9.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/img9.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/img9.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/img9.jpg');
+}
+
+.card:nth-child(11) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/dawki_camping.PNG');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/dawki_camping.PNG');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/dawki_camping.PNG');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/dawki_camping.PNG');
+}
+.card:nth-child(12) {
+    border: 0px;
+    box-shadow: none;
+
+  /* background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/beauti of tripura.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/beauti of tripura.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/beauti of tripura.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/beauti of tripura.jpg'); */
+}
+.card:nth-child(13) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/meghalaya_1.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/meghalaya_1.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/meghalaya_1.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/meghalaya_1.jpg');
+}
+.card:nth-child(14) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/muskan-gohrani-kr1EXKIsH-Y-unsplash.jpg');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/muskan-gohrani-kr1EXKIsH-Y-unsplash.jpg');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/muskan-gohrani-kr1EXKIsH-Y-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/muskan-gohrani-kr1EXKIsH-Y-unsplash.jpg');
+}
+.card:nth-child(15) {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(10,10,10,0)),
+      color-stop(50%, rgba(10,10,10,0)),
+      to(rgba(10,10,10,0.7))),url('images/narikelkunja.png');
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/narikelkunja.png');
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/narikelkunja.png');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10,10,10,0) 0%,
+      rgba(10,10,10,0) 50%,
+      rgba(10,10,10,0.7) 100%),url('images/narikelkunja.png');
+}
+
+
+.card:nth-child(1),:nth-child(6),:nth-child(7),:nth-child(12),:nth-child(13){
+  -ms-grid-column: span 6;
+      grid-column-start: span 6;
+}
+
+.card:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5),:nth-child(8),:nth-child(9)
+,:nth-child(10),:nth-child(11),:nth-child(14),:nth-child(15) {
+  -ms-grid-column: span 3;
+      grid-column-start: span 3;
+}
+
+@media screen and (max-width: 1200px) {
+  .card:nth-child(n) {
+      -ms-grid-column: span 6;
+          grid-column-start: span 6;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card:nth-child(n) {
+      -ms-grid-column: span 12;
+          grid-column-start: span 12;
+  }
+}
+
+/* css for feed ends here */
+
+/* consultancy form starts here */
+.row
+{
+  width: 92%;
+  margin:0 0 0 5% !important;
+}
+.cardd
+{
+  height: 550px;
+  width: 100%;
+  border: 1px solid #bbb !important;
+  padding: 0;
+  
+}
+.cardd:hover
+{
+  cursor: pointer;
+  box-shadow: 3px 3px 15px #888888;
+  transition-duration: 500ms;
+}
+.cardd-header
+{
+width: 100%;
+height: 60%;
+background-image: url('images/img1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.cardd-rule
+{
+width:40%;
+height: 10px;
+border-top: 10px dashed #bbb;
+}
+
+.cardd-heading
+{
+text-align: center;
+color: rgb(68 84 164);
+}
+.cardd-btn
+{
+  background-color: rgb(68 84 164);
+  color: #fff;
+  margin-left: 5%;
+}
+.cardd-btn:hover
+{
+  cursor: pointer;
+  box-shadow: 3px 3px 15px #888888;
+  transition-duration: 300ms;
+}
+

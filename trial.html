@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- google fonts link -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+<!-- font awsome links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/fddc5106ec.js" crossorigin="anonymous"></script>
+<!-- animate css -->
+<link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- bootstrap scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+  .dropdown-menu.collapsing {
+  display:block;
+}
+@media (max-width:767.98px) {
+  .dropdown-menu {
+    padding:0;
+    margin-top:0!important;
+    border:0!important;
+  }
+  .dropdown-menu:before {
+    content:"";
+    display:block;
+    padding-top: .5rem;
+  }
+  .dropdown-menu:after {
+    content:"";
+    display:block;
+    padding-bottom: .5rem;
+  }
+}
+@media (min-width:768px) {
+  .dropdown>div {
+    position:absolute;
+    clip: rect(0.5rem,9999px,9999px,-9999px);
+  }
+  .dropdown-menu {
+    height:auto!important;
+    transition: transform .35s ease!important;
+  }
+  .dropdown-menu.collapse, .dropdown-menu.sliding {
+    transform: translate(0,-100%);
+  }
+  .dropdown-menu.collapse:not(.show) {
+    display:block;
+  }
+  .dropdown-menu.collapse.show {
+    transform: translate(0,0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+      <ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item active">
+    
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    
+        </li>
+    
+        <li class="nav-item dropdown">
+    
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="collapse" aria-has<ahref="https://www.jqueryscript.net/tags.php?/popup/">popup</a>="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">Dropdown 1</a>
+    
+          <div>
+    
+            <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#collapseExample">
+    
+              <a class="dropdown-item" href="#">Action</a>
+    
+              <a class="dropdown-item" href="#">Another action</a>
+    
+              <a class="dropdown-item" href="#">Something else here</a>
+    
+            </div>
+    
+          </div>
+    
+        </li>
+    
+        <li class="nav-item dropdown">
+    
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu02">Dropdown 2</a>
+    
+          <div>
+    
+            <div id="dropdown-menu02" class="dropdown-menu collapse" aria-labelledby="dropdown02" data-parent="#collapseExample">
+    
+              <a class="dropdown-item" href="#">Action</a>
+    
+              <a class="dropdown-item" href="#">Another action</a>
+    
+              <a class="dropdown-item" href="#">Something else here</a>
+    
+            </div>
+    
+          </div>
+    
+        </li>
+    
+      </ul>
+    
+    </div>
+    <script>
+    $(".dropdown").on("hide.bs.collapse",function() {
+  $(this).find(".dropdown-menu").first().addClass("sliding" )
+});
+$(".dropdown").on("hidden.bs.collapse",function() {
+  $(this).find(".dropdown-menu").first().removeClass("sliding" )
+});
+$(document).click(function() {
+  $(".dropdown-menu.collapse.show").collapse("hide");
+});
+
+    </script>
+</body>
+</html>
