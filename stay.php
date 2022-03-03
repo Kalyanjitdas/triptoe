@@ -72,7 +72,7 @@ error_reporting(E_ALL & ~E_NOTICE);
         }
 
         .card:nth-child(4) {
-            background-image: url('images/neermahal.jpg');
+            background-image: url('images/neermahal1.jpg');
             background-size: cover;
         }
 
@@ -161,13 +161,12 @@ error_reporting(E_ALL & ~E_NOTICE);
             color: rgb(68 84 164);
         }
 
-        .hotel-rating,
+        .hotel-rating
             {
             display:flex !important;
             margin: 0;
             padding: 0;
-
-        }
+            }
 
         .hotel-review {
             font-size: 15px;
