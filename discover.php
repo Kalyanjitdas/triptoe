@@ -408,7 +408,7 @@ error_reporting(E_ALL & ~E_NOTICE);
                     </div>
                     <!-- ==========items for rajasthan================ -->
                     <div id="Rajasthan" class="tabcontent">
-                        <script>console.log('clicked on rajasthan';)</script>
+                        <script>console.log('clicked on rajasthan')</script>
                         <h3 class="item-heading">Places to visit in <span> Rajasthan </span></h3><br>
                         <div class="grid">
                             <?php
