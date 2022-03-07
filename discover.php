@@ -155,8 +155,6 @@ error_reporting(E_ALL & ~E_NOTICE);
             height: 100%;
         }
 
-        /* Anchor will cover the whole item by default */
-        /* For some effects it will show as a button */
         .grid figure figcaption>a {
             z-index: 1000;
             text-indent: 200%;
@@ -251,7 +249,6 @@ error_reporting(E_ALL & ~E_NOTICE);
             -webkit-transition: opacity 0.35s;
             transition: opacity 0.35s;
             -webkit-backface-visibility: hidden;
-            /* Fix for Chrome 37.0.2062.120 (Mac) */
         }
 
         figure.effect-zoe h2,
@@ -411,6 +408,7 @@ error_reporting(E_ALL & ~E_NOTICE);
                     </div>
                     <!-- ==========items for rajasthan================ -->
                     <div id="Rajasthan" class="tabcontent">
+                        <script>console.log('clicked on rajasthan';)</script>
                         <h3 class="item-heading">Places to visit in <span> Rajasthan </span></h3><br>
                         <div class="grid">
                             <?php
